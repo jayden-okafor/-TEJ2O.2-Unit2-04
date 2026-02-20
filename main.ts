@@ -1,8 +1,15 @@
-/* Copyright (c) 2020 MTHS All rights reserved
+/* Copyright (c) 2026 MTHS All rights reserved
  *
- * Created by: XXX
- * Created on: Sep 2020
- * This program ...
+ * Created by: Jayden
+ * Created on: Feb 2026
+ * This program tells you the temperature using the microbit
 */
 
-basic.showString('Hello, World!')
+basic.clearScreen();
+basic.showIcon(IconNames.Happy)
+
+input.onButtonPressed(Button.A, function() {
+    basic.showNumber(input.temperature())
+})
+
+basic.clearScreen();
