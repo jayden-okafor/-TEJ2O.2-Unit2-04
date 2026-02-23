@@ -10,7 +10,7 @@ basic.showIcon(IconNames.Happy)
 
 let temperature: number
 
-input.onButtonPressed(Button.A, function() {
+input.onButtonPressed(Button.A && Button.B, function() {
     temperature = input.temperature()
     basic.showString('The temperature is: ' + temperature.toString() + ' C')
 })
