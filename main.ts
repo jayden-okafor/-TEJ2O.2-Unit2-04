@@ -8,11 +8,11 @@
 basic.clearScreen();
 basic.showIcon(IconNames.Happy)
 
-let temperature: number
+let temperatureInCelcius: number
 
 input.onButtonPressed(Button.A, function() {
-    temperature = input.temperature()
-    basic.showString('The temperature is: ' + temperature.toString() + ' C')
+    temperatureInCelcius = input.temperature()
+    basic.showString('The temperature is: ' + temperatureInCelcius.toString() + ' C')
 })
 
 basic.clearScreen();
